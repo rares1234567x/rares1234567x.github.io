@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Div 2</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      height: 150vh;
+    }
+
+    header {
+      background: #2196F3;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .main-wrapper {
+      padding: 10px;
+    }
+
+    .main-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 10px;
+      border: 2px solid green; /* Conturul albastru */
+    }
+
+    .left {
+      background: #F28B82;
+      padding: 10px;
+    }
+
+    .right {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .right-top,
+    .right-bottom {
+      background: #80CBC4;
+      padding: 10px;
+    }
+
+    footer {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Banner</header>
+    
+    <div class="main-wrapper">
+      <div class="main-content">
+        <div class="left">Centru stanga</div>
+        <div class="right">
+          <div class="right-top">Centru dreapta sus</div>
+          <div class="right-bottom">Centru dreapta jos</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>subsol</footer>
+  </div>
+</body>
+</html>
